@@ -24,11 +24,18 @@ namespace Checkpoints
     //
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of // TODO: needs to adjusted for checkpoint checks, also see main.cpp
-        (	  0, uint256("0x499c271e5fafbe06c3b7262133eb1838e1ab3b529998a5ca00bc0167bb5a417e"))
-        (  8603, uint256("0x07a977e5f2c175e088843d341d7264cb92d6d0ebee7dddaf2a457382dab987a0"))
-		;
+         (	  0, uint256("0x499c271e5fafbe06c3b7262133eb1838e1ab3b529998a5ca00bc0167bb5a417e"))
 
-    bool CheckBlock(int nHeight, const uint256& hash)
+         (  8603, uint256("0x07a977e5f2c175e088843d341d7264cb92d6d0ebee7dddaf2a457382dab987a0"))
+         
+		 ( 26882, uint256("0xc1c0a0322b3170ea2062a08aec22c8409176a9b8a20f8c5e3bf5a1ecfecc323d"))
+            
+		 (  51323, uint256("0xbab45304c24fb95479c56ef54368b8b08fdcaa1d1d868b168bbfbd82097f5ae8"))
+	
+      	;
+      
+
+     bool CheckBlock(int nHeight, const uint256& hash)
     {
         if (fTestNet) return true; // Testnet has no checkpoints
 
