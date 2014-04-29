@@ -17,10 +17,9 @@ namespace Checkpoints
 
     //
     // What makes a good checkpoint block?
-    // + Is surrounded by blocks with reasonable timestamps
-    //   (no blocks before with a timestamp after, none after with
-    //    timestamp before)
-    // + Contains no strange transactions
+    // Ask a coin developer.
+    //   
+    //   
     //
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of // TODO: needs to adjusted for checkpoint checks, also see main.cpp
@@ -32,7 +31,10 @@ namespace Checkpoints
             
 		 (  51323, uint256("0xbab45304c24fb95479c56ef54368b8b08fdcaa1d1d868b168bbfbd82097f5ae8"))
 	
-      	;
+      	 (  59010, uint256("0x0468792facee5daf02c3d73fa4b9db612ccb888c0d2c4251f4ca7050b7f9cb91"))
+
+		
+		;
       
 
      bool CheckBlock(int nHeight, const uint256& hash)
